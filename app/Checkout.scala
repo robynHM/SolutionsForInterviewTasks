@@ -11,7 +11,7 @@ class Checkout {
     def checkoutStringList(shoppingList: List[String]): Double = {
       val apples: Double = shoppingList.count(_.trim.toLowerCase == "apple") * 0.60
       val oranges: Double = shoppingList.count(_.trim.toLowerCase == "orange") * 0.25
-      val bananas: Double = shoppingList.count(_.trim.toLowerCase == "bananas") * 0.20
+      val bananas: Double = shoppingList.count(_.trim.toLowerCase == "banana") * 0.20
       apples + oranges + bananas
     }
 
